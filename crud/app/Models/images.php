@@ -8,4 +8,17 @@ use Illuminate\Database\Eloquent\Model;
 class images extends Model
 {
     use HasFactory;
+
+    protected $fillabele =
+    ['product_id',
+     'image',
+    ];
+
+    
+    public function product()
+{
+    return $this->belongsTo(Product::class);
 }
+}
+
+
