@@ -34,7 +34,7 @@
             <td>{{$product->product->price}}</td>
             <td width="8%" height="160%"><div id="{{$product->product->id}}" class="carousel slide">
               <div class="carousel-inner">
-                <div class="carousel-item active position-relative">
+                <div class="carousel-item active position-relative ">
                   <img src="https://img.freepik.com/foto-gratis/hermosa-joven-delgada-haciendo-ejercicios-estiramiento-gimnasio-contra-blanco_155003-17254.jpg?size=626&ext=jpg&ga=GA1.2.100297812.1708107760&semt=ais" class="d-block w-100" alt="...">
                   <div class="position-absolute top-50 start-50 translate-middle" style="max-width: 100%; width: auto;">
                       <img src="{{$product->image}}" alt="..." class="img-overlay" style="max-width: 100%;">
