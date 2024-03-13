@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CategoriesController;
+use App\Http\Controllers\ImagesController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use App\Models\products;
@@ -46,6 +47,10 @@ Route::post('/crear-producto',[ProductController::class, 'store'])->name('crear.
 Route::put('/products/{id}', [ProductController::class, 'update'])->name('product.update');
 Route::get('/products/{id}/edit', [ProductController::class, 'edit'])->name('products.edit');
 Route::delete('/products/{id}', [ProductController::class, 'destroy'])->name('products.destroy');
+
+//images
+
+Route::get('/producto',[ImagesController::class, 'index'])->name('inicio.images');
 
 
 require __DIR__.'/auth.php';
